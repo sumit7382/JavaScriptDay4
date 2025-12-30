@@ -5,6 +5,16 @@
 // document.querySelector("body").appendChild(button);
 
 
-let para = document.querySelector("p");
-para.getAttribute("class");
-para.classList.add("newClass");
+// let para = document.querySelector("p");
+// para.getAttribute("class");
+// para.classList.add("newClass");
+
+let form = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+   e.preventDefault(); // stop refresh
+
+  let name = document.getElementById("name").value;
+  console.log(name);
+});
+
